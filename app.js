@@ -1,11 +1,16 @@
 const JERUSALEM_STATION_ID = "680";
 const DEFAULT_OTHER_STATION = "2800";
+const API_BASE = "/rail-api";
 
 const state = {
   direction: "from-jerusalem",
   stations: [],
   pairs: {},
   meta: null,
+  // booking flow
+  step: "form", // "form" | "otp" | "result"
+  phone: "",
+  tripParams: null,
 };
 
 const elements = {
@@ -19,7 +24,46 @@ const elements = {
   scheduleType: document.getElementById("scheduleType"),
   trainType: document.getElementById("trainType"),
   statusText: document.getElementById("statusText"),
+  phoneNumber: document.getElementById("phoneNumber"),
+  // steps
+  stepForm: document.getElementById("stepForm"),
+  stepOtp: document.getElementById("stepOtp"),
+  stepResult: document.getElementById("stepResult"),
+  // otp
+  otpPrompt: document.getElementById("otpPrompt"),
+  otpInput: document.getElementById("otpInput"),
+  otpStatusText: document.getElementById("otpStatusText"),
+  otpBackBtn: document.getElementById("otpBackBtn"),
+  otpConfirmBtn: document.getElementById("otpConfirmBtn"),
+  // result
+  resultId: document.getElementById("resultId"),
+  qrcode: document.getElementById("qrcode"),
+  resetBtn: document.getElementById("resetBtn"),
 };
+
+// ── Step navigation ──────────────────────────────────────────────────────────
+
+function showStep(step) {
+  state.step = step;
+  elements.stepForm.classList.toggle("hidden", step !== "form");
+  elements.stepOtp.classList.toggle("hidden", step !== "otp");
+  elements.stepResult.classList.toggle("hidden", step !== "result");
+}
+
+// ── Cookie helpers ───────────────────────────────────────────────────────────
+
+function setPhoneCookie(phone) {
+  const expires = new Date();
+  expires.setFullYear(expires.getFullYear() + 1);
+  document.cookie = `phone=${encodeURIComponent(phone)};expires=${expires.toUTCString()};path=/`;
+}
+
+function getPhoneCookie() {
+  const match = document.cookie.match(/(?:^|; )phone=([^;]*)/);
+  return match ? decodeURIComponent(match[1]) : "";
+}
+
+// ── Date helpers ─────────────────────────────────────────────────────────────
 
 function setDefaultDate() {
   const now = new Date();
@@ -34,24 +78,20 @@ function setDefaultDate() {
 }
 
 function isSupportedWeekday(value) {
-  if (!value) {
-    return false;
-  }
-
+  if (!value) return false;
   const day = new Date(`${value}T12:00:00`).getDay();
   return day >= 0 && day <= 4;
 }
 
 function formatTime(value) {
-  if (!value) {
-    return "";
-  }
-
+  if (!value) return "";
   const [hoursText, minutesText] = value.split(":");
   const hours = Number(hoursText);
   const normalizedHours = String(hours % 24).padStart(2, "0");
   return `${normalizedHours}:${minutesText}`;
 }
+
+// ── Station / trip rendering ─────────────────────────────────────────────────
 
 function getPairKey(otherStationId) {
   return state.direction === "from-jerusalem"
@@ -86,12 +126,24 @@ function renderStationOptions() {
   }
 }
 
+function todayLocalStr() {
+  const now = new Date();
+  return new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+}
+
 function getTripOptions() {
   const otherStationId = elements.otherStation.value;
-  if (!otherStationId) {
-    return [];
-  }
-  return state.pairs[getPairKey(otherStationId)] || [];
+  if (!otherStationId) return [];
+  const options = state.pairs[getPairKey(otherStationId)] || [];
+
+  if (elements.tripDate.value !== todayLocalStr()) return options;
+
+  const now = new Date();
+  const nowMinutes = now.getHours() * 60 + now.getMinutes();
+  return options.filter((option) => {
+    const [h, m] = formatTime(option.departureTime).split(":").map(Number);
+    return h * 60 + m >= nowMinutes;
+  });
 }
 
 function renderTimeOptions() {
@@ -101,7 +153,8 @@ function renderTimeOptions() {
   elements.tripTime.innerHTML = [
     '<option value="">בחר שעה</option>',
     ...options.map(
-      (option) => `<option value="${formatTime(option.departureTime)}">${formatTime(option.departureTime)} ← ${formatTime(option.arrivalTime)} • רכבת ${option.trainNumber}</option>`
+      (option) =>
+        `<option value="${formatTime(option.departureTime)}">${formatTime(option.departureTime)} ← ${formatTime(option.arrivalTime)} • רכבת ${option.trainNumber}</option>`
     ),
   ].join("");
 
@@ -122,9 +175,9 @@ function updateStatus() {
     return;
   }
 
-  const options = getTripOptions();
   renderTimeOptions();
 
+  const options = getTripOptions();
   if (!elements.otherStation.value || !options.length) {
     elements.statusText.textContent = "";
     return;
@@ -137,26 +190,47 @@ function syncTrainNumberToTime() {
   const selectedOption = getTripOptions().find(
     (option) => formatTime(option.departureTime) === elements.tripTime.value
   );
-
   elements.trainNumber.value = selectedOption ? String(selectedOption.trainNumber || "") : "";
 }
 
-function handleDirectionClick(event) {
-  const button = event.target.closest(".direction-btn");
-  if (!button) {
-    return;
-  }
+// ── API calls ────────────────────────────────────────────────────────────────
 
-  state.direction = button.dataset.direction;
-  document.querySelectorAll(".direction-btn").forEach((item) => {
-    item.classList.toggle("active", item === button);
+async function apiPost(path, body) {
+  const response = await fetch(`${API_BASE}/${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    credentials: "include",
+    body: JSON.stringify(body),
   });
-
-  renderStationOptions();
-  updateStatus();
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${await response.text()}`);
+  }
+  return response.json();
 }
 
-function handleSubmit(event) {
+async function sendOtp(phone) {
+  return apiPost("SendOtp", { userContact: phone, type: "phone" });
+}
+
+async function verifyOtp(phone, otp) {
+  return apiPost("VerifyOtp", { userContact: phone, type: "phone", otp });
+}
+
+async function orderSeat(params) {
+  return apiPost("OrderSeatForTrip", {
+    fromStation: params.fromStation,
+    toStation: params.toStation,
+    departureDate: params.date,
+    numberSeats: 1,
+    sourceChannel: "web",
+    trainNumber: Number(params.trainNumber),
+    type: "",
+  });
+}
+
+// ── Form submission (step 1 → send OTP) ──────────────────────────────────────
+
+async function handleSubmit(event) {
   event.preventDefault();
 
   if (!isSupportedWeekday(elements.tripDate.value)) {
@@ -170,25 +244,145 @@ function handleSubmit(event) {
     return;
   }
 
+  const phone = elements.phoneNumber.value.trim();
+  if (!phone) {
+    elements.statusText.textContent = "יש להזין מספר טלפון.";
+    return;
+  }
+
   const fromStation = state.direction === "from-jerusalem" ? JERUSALEM_STATION_ID : otherStationId;
   const toStation = state.direction === "from-jerusalem" ? otherStationId : JERUSALEM_STATION_ID;
 
-  const params = new URLSearchParams({
-    page: "trip-reservation",
+  state.phone = phone;
+  state.tripParams = {
     fromStation,
     toStation,
     date: elements.tripDate.value,
     time: elements.tripTime.value,
-    scheduleType: elements.scheduleType.value || "1",
-    trainType: elements.trainType.value || "empty",
-  });
+    trainNumber: elements.trainNumber.value,
+  };
 
-  if (elements.trainNumber.value.trim()) {
-    params.set("trainNumber", elements.trainNumber.value.trim());
+  const submitBtn = elements.voucherForm.querySelector("button[type=submit]");
+  submitBtn.disabled = true;
+  elements.statusText.textContent = "מזמין מקום...";
+
+  // Try ordering with existing authToken first
+  try {
+    const data = await orderSeat(state.tripParams);
+    if (data.statusCode === 200 && data.result?.result) {
+      submitBtn.disabled = false;
+      elements.statusText.textContent = "";
+      showResult(data.result.result);
+      return;
+    }
+    throw new Error(JSON.stringify(data.errorMessages || data));
+  } catch (error) {
+    if (!error.message.includes("401")) {
+      elements.statusText.textContent = "שגיאה בהזמנה. נסה שנית.";
+      submitBtn.disabled = false;
+      console.error(error);
+      return;
+    }
   }
 
-  window.location.href = `https://www.rail.co.il/?${params.toString()}`;
+  // 401 — need fresh OTP
+  elements.statusText.textContent = "שולח קוד אימות...";
+  try {
+    await sendOtp(phone);
+    setPhoneCookie(phone);
+    elements.statusText.textContent = "";
+    submitBtn.disabled = false;
+    elements.otpPrompt.textContent = `קוד אימות נשלח למספר ${phone}. יש להזין אותו כאן:`;
+    elements.otpInput.value = "";
+    elements.otpStatusText.textContent = "";
+    showStep("otp");
+  } catch (error) {
+    elements.statusText.textContent = "שגיאה בשליחת קוד האימות. נסה שנית.";
+    submitBtn.disabled = false;
+    console.error(error);
+  }
 }
+
+// ── OTP confirmation (step 2 → verify + order) ───────────────────────────────
+
+async function handleOtpConfirm() {
+  const otp = elements.otpInput.value.trim();
+  if (!otp) {
+    elements.otpStatusText.textContent = "יש להזין קוד אימות.";
+    return;
+  }
+
+  elements.otpStatusText.textContent = "מאמת קוד...";
+  elements.otpConfirmBtn.disabled = true;
+  elements.otpBackBtn.disabled = true;
+
+  try {
+    await verifyOtp(state.phone, otp);
+  } catch (error) {
+    elements.otpStatusText.textContent = "קוד שגוי או פג תוקף. נסה שנית.";
+    elements.otpConfirmBtn.disabled = false;
+    elements.otpBackBtn.disabled = false;
+    console.error(error);
+    return;
+  }
+
+  elements.otpStatusText.textContent = "מזמין מקום...";
+
+  try {
+    const data = await orderSeat(state.tripParams);
+
+    if (data.statusCode !== 200 || !data.result?.result) {
+      throw new Error(JSON.stringify(data.errorMessages || data));
+    }
+
+    const resultId = data.result.result;
+    showResult(resultId);
+  } catch (error) {
+    console.error(error);
+    elements.otpStatusText.textContent = "שגיאה בהזמנת המקום. נסה שנית.";
+    elements.otpConfirmBtn.disabled = false;
+    elements.otpBackBtn.disabled = false;
+  }
+}
+
+// ── Result + barcode (step 3) ────────────────────────────────────────────────
+
+function showResult(resultId) {
+  elements.resultId.textContent = resultId;
+
+  elements.qrcode.innerHTML = "";
+  new QRCode(elements.qrcode, {
+    text: resultId,
+    width: 200,
+    height: 200,
+    colorDark: "#16202a",
+    colorLight: "#ffffff",
+  });
+
+  showStep("result");
+}
+
+function handleReset() {
+  showStep("form");
+  elements.statusText.textContent = "";
+}
+
+// ── Direction toggle ─────────────────────────────────────────────────────────
+
+function handleDirectionClick(event) {
+  const button = event.target.closest(".direction-btn");
+  if (!button) return;
+
+  state.direction = button.dataset.direction;
+  document.querySelectorAll(".direction-btn").forEach((item) => {
+    item.classList.toggle("active", item === button);
+  });
+
+  renderStationOptions();
+  updateStatus();
+}
+
+// ── Data loading ─────────────────────────────────────────────────────────────
 
 async function loadData() {
   try {
@@ -206,14 +400,24 @@ async function loadData() {
   }
 }
 
+// ── Event registration ───────────────────────────────────────────────────────
+
 function registerEvents() {
   elements.directionGroup.addEventListener("click", handleDirectionClick);
   elements.otherStation.addEventListener("change", updateStatus);
   elements.tripDate.addEventListener("change", updateStatus);
   elements.tripTime.addEventListener("change", syncTrainNumberToTime);
   elements.voucherForm.addEventListener("submit", handleSubmit);
+  elements.otpConfirmBtn.addEventListener("click", handleOtpConfirm);
+  elements.otpBackBtn.addEventListener("click", () => showStep("form"));
+  elements.resetBtn.addEventListener("click", handleReset);
 }
+
+// ── Init ─────────────────────────────────────────────────────────────────────
 
 setDefaultDate();
 registerEvents();
 loadData();
+
+const savedPhone = getPhoneCookie();
+if (savedPhone) elements.phoneNumber.value = savedPhone;
