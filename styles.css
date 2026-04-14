@@ -106,6 +106,38 @@ select {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
+.secondary-btn {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #fff;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.success-text {
+  color: #1a7f44;
+  font-weight: 600;
+}
+
+.barcode-wrap {
+  margin-top: 16px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.barcode-wrap svg {
+  max-width: 100%;
+}
+
 @media (max-width: 720px) {
   .grid.two-cols {
     grid-template-columns: 1fr;
