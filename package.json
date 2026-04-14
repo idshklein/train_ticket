@@ -1,0 +1,7 @@
+{
+  "name": "train_ticket",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}

@@ -1,6 +1,30 @@
 const JERUSALEM_STATION_ID = "680";
 const DEFAULT_OTHER_STATION = "2800";
 const API_BASE = "/rail-api";
+const bookingHelpers = window.BookingHelpers || {};
+const buildReservationUrl =
+  bookingHelpers.buildReservationUrl ||
+  ((params) => {
+    const query = new URLSearchParams({
+      page: "trip-reservation",
+      fromStation: String(params.fromStation || ""),
+      toStation: String(params.toStation || ""),
+      date: params.date || "",
+      time: params.time || "",
+      scheduleType: params.scheduleType || "1",
+      trainType: params.trainType || "empty",
+    });
+
+    const trainNumber = String(params.trainNumber || "").trim();
+    if (trainNumber) {
+      query.set("trainNumber", trainNumber);
+    }
+
+    return `https://www.rail.co.il/?${query.toString()}`;
+  });
+const shouldFallbackToRedirect =
+  bookingHelpers.shouldFallbackToRedirect ||
+  ((error) => /HTTP 403|Cloudflare|Attention Required|Access denied|fetch failed|NetworkError/i.test(String(error?.message || error || "")));
 
 const state = {
   direction: "from-jerusalem",
@@ -228,6 +252,16 @@ async function orderSeat(params) {
   });
 }
 
+function redirectToOfficialBooking(params, statusElement) {
+  if (statusElement) {
+    statusElement.textContent = "המערכת הישירה חסומה כרגע. מעביר לאתר רכבת ישראל להשלמת ההזמנה...";
+  }
+
+  window.setTimeout(() => {
+    window.location.assign(buildReservationUrl(params));
+  }, 150);
+}
+
 // ── Form submission (step 1 → send OTP) ──────────────────────────────────────
 
 async function handleSubmit(event) {
@@ -260,6 +294,8 @@ async function handleSubmit(event) {
     date: elements.tripDate.value,
     time: elements.tripTime.value,
     trainNumber: elements.trainNumber.value,
+    scheduleType: elements.scheduleType.value || "1",
+    trainType: elements.trainType.value || "empty",
   };
 
   const submitBtn = elements.voucherForm.querySelector("button[type=submit]");
@@ -278,9 +314,15 @@ async function handleSubmit(event) {
     throw new Error(JSON.stringify(data.errorMessages || data));
   } catch (error) {
     if (!error.message.includes("401")) {
-      elements.statusText.textContent = "שגיאה בהזמנה. נסה שנית.";
       submitBtn.disabled = false;
       console.error(error);
+
+      if (shouldFallbackToRedirect(error)) {
+        redirectToOfficialBooking(state.tripParams, elements.statusText);
+        return;
+      }
+
+      elements.statusText.textContent = "שגיאה בהזמנה. נסה שנית.";
       return;
     }
   }
@@ -297,9 +339,15 @@ async function handleSubmit(event) {
     elements.otpStatusText.textContent = "";
     showStep("otp");
   } catch (error) {
-    elements.statusText.textContent = "שגיאה בשליחת קוד האימות. נסה שנית.";
     submitBtn.disabled = false;
     console.error(error);
+
+    if (shouldFallbackToRedirect(error)) {
+      redirectToOfficialBooking(state.tripParams, elements.statusText);
+      return;
+    }
+
+    elements.statusText.textContent = "שגיאה בשליחת קוד האימות. נסה שנית.";
   }
 }
 
@@ -319,10 +367,16 @@ async function handleOtpConfirm() {
   try {
     await verifyOtp(state.phone, otp);
   } catch (error) {
+    console.error(error);
+
+    if (shouldFallbackToRedirect(error)) {
+      redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
+      return;
+    }
+
     elements.otpStatusText.textContent = "קוד שגוי או פג תוקף. נסה שנית.";
     elements.otpConfirmBtn.disabled = false;
     elements.otpBackBtn.disabled = false;
-    console.error(error);
     return;
   }
 
@@ -339,6 +393,12 @@ async function handleOtpConfirm() {
     showResult(resultId);
   } catch (error) {
     console.error(error);
+
+    if (shouldFallbackToRedirect(error)) {
+      redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
+      return;
+    }
+
     elements.otpStatusText.textContent = "שגיאה בהזמנת המקום. נסה שנית.";
     elements.otpConfirmBtn.disabled = false;
     elements.otpBackBtn.disabled = false;
