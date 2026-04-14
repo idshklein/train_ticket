@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/rail-api/*"
-  to = "/.netlify/functions/rail-proxy"
+  to = "/.netlify/functions/rail-proxy/:splat"
   status = 200
   force = true
 
