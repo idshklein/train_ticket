@@ -1,3 +1,6 @@
+import helpers from "./worker-helpers.cjs";
+
+const { shouldServeStatusPage, buildStatusPayload } = helpers;
 const UPSTREAM = "https://rail-api.rail.co.il/common/api/v1/TripReservation";
 const ALLOWED_ORIGIN = "https://train-ticket-idshklein.netlify.app";
 
@@ -40,13 +43,24 @@ function corsHeaders(origin) {
 export default {
   async fetch(request) {
     const origin = request.headers.get("Origin") || "";
+    const url = new URL(request.url);
+
+    if (shouldServeStatusPage(request.method)) {
+      const responseHeaders = new Headers(corsHeaders(origin));
+      responseHeaders.set("Content-Type", "application/json; charset=utf-8");
+      responseHeaders.set("Cache-Control", "no-store");
+
+      return new Response(JSON.stringify(buildStatusPayload(url.pathname), null, 2), {
+        status: 200,
+        headers: responseHeaders,
+      });
+    }
 
     // Handle CORS preflight
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders(origin) });
     }
 
-    const url = new URL(request.url);
     const upstreamUrl = buildUpstreamUrl(url.pathname);
     const body = request.method === "GET" || request.method === "HEAD" ? undefined : await request.text();
 
