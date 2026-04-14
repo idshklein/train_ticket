@@ -1,5 +1,5 @@
 const UPSTREAM = "https://rail-api.rail.co.il/common/api/v1/TripReservation";
-const ALLOWED_ORIGIN = "https://teal-custard-16f3ac.netlify.app";
+const ALLOWED_ORIGIN = "https://train-ticket-idshklein.netlify.app";
 
 function buildUpstreamUrl(pathname = "") {
   const tail = String(pathname).replace(/^\/+/, "");
