@@ -317,10 +317,10 @@ async function handleSubmit(event) {
       submitBtn.disabled = false;
       console.error(error);
 
-      if (shouldFallbackToRedirect(error)) {
-        redirectToOfficialBooking(state.tripParams, elements.statusText);
-        return;
-      }
+      //if (shouldFallbackToRedirect(error)) {
+      //  redirectToOfficialBooking(state.tripParams, elements.statusText);
+      //  return;
+      //}
 
       elements.statusText.textContent = "שגיאה בהזמנה. נסה שנית.";
       return;
@@ -342,10 +342,10 @@ async function handleSubmit(event) {
     submitBtn.disabled = false;
     console.error(error);
 
-    if (shouldFallbackToRedirect(error)) {
-      redirectToOfficialBooking(state.tripParams, elements.statusText);
-      return;
-    }
+    //if (shouldFallbackToRedirect(error)) {
+    //  redirectToOfficialBooking(state.tripParams, elements.statusText);
+    //  return;
+    //}
 
     elements.statusText.textContent = "שגיאה בשליחת קוד האימות. נסה שנית.";
   }
@@ -369,10 +369,10 @@ async function handleOtpConfirm() {
   } catch (error) {
     console.error(error);
 
-    if (shouldFallbackToRedirect(error)) {
-      redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
-      return;
-    }
+    //if (shouldFallbackToRedirect(error)) {
+    //  redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
+    //  return;
+    //}
 
     elements.otpStatusText.textContent = "קוד שגוי או פג תוקף. נסה שנית.";
     elements.otpConfirmBtn.disabled = false;
@@ -394,10 +394,10 @@ async function handleOtpConfirm() {
   } catch (error) {
     console.error(error);
 
-    if (shouldFallbackToRedirect(error)) {
-      redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
-      return;
-    }
+    //if (shouldFallbackToRedirect(error)) {
+    //  redirectToOfficialBooking(state.tripParams, elements.otpStatusText);
+    //  return;
+    //}
 
     elements.otpStatusText.textContent = "שגיאה בהזמנת המקום. נסה שנית.";
     elements.otpConfirmBtn.disabled = false;
