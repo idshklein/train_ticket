@@ -2,6 +2,12 @@
   publish = "."
 
 [[redirects]]
+  from = "/rail-api/*"
+  to = "/.netlify/functions/rail-proxy"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
