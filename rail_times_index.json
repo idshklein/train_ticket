@@ -1,0 +1,3484 @@
+{
+  "generatedFrom": "rail_operator_2_gtfs.zip",
+  "agencyId": "2",
+  "serviceMode": "weekday-only",
+  "supportedDays": [
+    "sunday",
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday"
+  ],
+  "unsupportedDays": [
+    "friday",
+    "saturday"
+  ],
+  "serviceCount": 8,
+  "stationCount": 65,
+  "pairCount": 16,
+  "stations": [
+    {
+      "stationId": 9700,
+      "stationName": "אופקים"
+    },
+    {
+      "stationId": 1820,
+      "stationName": "אחיהוד"
+    },
+    {
+      "stationId": 5800,
+      "stationName": "אשדוד - עד הלום"
+    },
+    {
+      "stationId": 5900,
+      "stationName": "אשקלון"
+    },
+    {
+      "stationId": 5300,
+      "stationName": "באר יעקב"
+    },
+    {
+      "stationId": 7320,
+      "stationName": "באר שבע - מרכז"
+    },
+    {
+      "stationId": 7300,
+      "stationName": "באר שבע - צפון - האוניברסיטה"
+    },
+    {
+      "stationId": 3400,
+      "stationName": "בית יהושע"
+    },
+    {
+      "stationId": 1280,
+      "stationName": "בית שאן - דוד לוי"
+    },
+    {
+      "stationId": 6300,
+      "stationName": "בית שמש"
+    },
+    {
+      "stationId": 4100,
+      "stationName": "בני ברק"
+    },
+    {
+      "stationId": 2800,
+      "stationName": "בנימינה"
+    },
+    {
+      "stationId": 4680,
+      "stationName": "בת ים - אלי כהן - יוספטל"
+    },
+    {
+      "stationId": 4690,
+      "stationName": "בת ים - הקוממיות"
+    },
+    {
+      "stationId": 7500,
+      "stationName": "דימונה"
+    },
+    {
+      "stationId": 9200,
+      "stationName": "הוד השרון - סוקולוב"
+    },
+    {
+      "stationId": 3500,
+      "stationName": "הרצליה"
+    },
+    {
+      "stationId": 3100,
+      "stationName": "חדרה - מערב"
+    },
+    {
+      "stationId": 4660,
+      "stationName": "חולון - וולפסון"
+    },
+    {
+      "stationId": 1300,
+      "stationName": "חוצות המפרץ"
+    },
+    {
+      "stationId": 2200,
+      "stationName": "חיפה - בת גלים"
+    },
+    {
+      "stationId": 2300,
+      "stationName": "חיפה - חוף הכרמל"
+    },
+    {
+      "stationId": 2100,
+      "stationName": "חיפה - מרכז השמונה"
+    },
+    {
+      "stationId": 5410,
+      "stationName": "יבנה - מזרח"
+    },
+    {
+      "stationId": 9000,
+      "stationName": "יבנה - מערב"
+    },
+    {
+      "stationId": 1240,
+      "stationName": "יוקנעם - כפר יהושע"
+    },
+    {
+      "stationId": 680,
+      "stationName": "ירושלים - יצחק נבון"
+    },
+    {
+      "stationId": 4800,
+      "stationName": "כפר חב\"ד"
+    },
+    {
+      "stationId": 8700,
+      "stationName": "כפר סבא - נורדאו"
+    },
+    {
+      "stationId": 1840,
+      "stationName": "כרמיאל"
+    },
+    {
+      "stationId": 8550,
+      "stationName": "להבים - רהט"
+    },
+    {
+      "stationId": 5000,
+      "stationName": "לוד"
+    },
+    {
+      "stationId": 5150,
+      "stationName": "לוד - גני אביב"
+    },
+    {
+      "stationId": 1250,
+      "stationName": "מגדל העמק - כפר ברוך"
+    },
+    {
+      "stationId": 400,
+      "stationName": "מודיעין - מרכז"
+    },
+    {
+      "stationId": 6900,
+      "stationName": "מזכרת בתיה"
+    },
+    {
+      "stationId": 1220,
+      "stationName": "מרכזית המפרץ"
+    },
+    {
+      "stationId": 1600,
+      "stationName": "נהריה"
+    },
+    {
+      "stationId": 8600,
+      "stationName": "נמל התעופה בן גוריון (נתב\"ג)"
+    },
+    {
+      "stationId": 9650,
+      "stationName": "נתיבות"
+    },
+    {
+      "stationId": 3300,
+      "stationName": "נתניה"
+    },
+    {
+      "stationId": 1500,
+      "stationName": "עכו"
+    },
+    {
+      "stationId": 1260,
+      "stationName": "עפולה"
+    },
+    {
+      "stationId": 2500,
+      "stationName": "עתלית"
+    },
+    {
+      "stationId": 300,
+      "stationName": "פאתי מודיעין"
+    },
+    {
+      "stationId": 4250,
+      "stationName": "פתח תקווה - סגולה"
+    },
+    {
+      "stationId": 4170,
+      "stationName": "פתח תקווה - קריית אריה"
+    },
+    {
+      "stationId": 4640,
+      "stationName": "צומת חולון"
+    },
+    {
+      "stationId": 2820,
+      "stationName": "קיסריה - פרדס חנה"
+    },
+    {
+      "stationId": 7000,
+      "stationName": "קריית גת"
+    },
+    {
+      "stationId": 700,
+      "stationName": "קריית חיים"
+    },
+    {
+      "stationId": 1400,
+      "stationName": "קריית מוצקין"
+    },
+    {
+      "stationId": 6150,
+      "stationName": "קריית מלאכי - יואב"
+    },
+    {
+      "stationId": 8800,
+      "stationName": "ראש העין - צפון"
+    },
+    {
+      "stationId": 9100,
+      "stationName": "ראשון לציון - הראשונים"
+    },
+    {
+      "stationId": 9800,
+      "stationName": "ראשון לציון - משה דיין"
+    },
+    {
+      "stationId": 5200,
+      "stationName": "רחובות"
+    },
+    {
+      "stationId": 5010,
+      "stationName": "רמלה"
+    },
+    {
+      "stationId": 2960,
+      "stationName": "רעננה - דרום"
+    },
+    {
+      "stationId": 2940,
+      "stationName": "רעננה - מערב"
+    },
+    {
+      "stationId": 9600,
+      "stationName": "שדרות"
+    },
+    {
+      "stationId": 4900,
+      "stationName": "תל אביב - ההגנה"
+    },
+    {
+      "stationId": 4600,
+      "stationName": "תל אביב - השלום"
+    },
+    {
+      "stationId": 3700,
+      "stationName": "תל אביב - סבידור מרכז"
+    },
+    {
+      "stationId": 3600,
+      "stationName": "תל אביב – האוניברסיטה - אקספו"
+    }
+  ],
+  "pairs": {
+    "680_300": [
+      {
+        "trainNumber": "542",
+        "departureTime": "05:59:00",
+        "arrivalTime": "06:16:00",
+        "routeId": "32433"
+      },
+      {
+        "trainNumber": "544",
+        "departureTime": "06:29:00",
+        "arrivalTime": "06:49:00",
+        "routeId": "41679"
+      },
+      {
+        "trainNumber": "546",
+        "departureTime": "06:59:00",
+        "arrivalTime": "07:16:00",
+        "routeId": "32435"
+      },
+      {
+        "trainNumber": "548",
+        "departureTime": "07:29:00",
+        "arrivalTime": "07:49:00",
+        "routeId": "34185"
+      },
+      {
+        "trainNumber": "550",
+        "departureTime": "07:59:00",
+        "arrivalTime": "08:16:00",
+        "routeId": "32437"
+      },
+      {
+        "trainNumber": "552",
+        "departureTime": "08:29:00",
+        "arrivalTime": "08:49:00",
+        "routeId": "34187"
+      },
+      {
+        "trainNumber": "554",
+        "departureTime": "08:59:00",
+        "arrivalTime": "09:16:00",
+        "routeId": "32439"
+      },
+      {
+        "trainNumber": "558",
+        "departureTime": "09:59:00",
+        "arrivalTime": "10:16:00",
+        "routeId": "32441"
+      },
+      {
+        "trainNumber": "562",
+        "departureTime": "10:59:00",
+        "arrivalTime": "11:16:00",
+        "routeId": "32444"
+      },
+      {
+        "trainNumber": "564",
+        "departureTime": "11:59:00",
+        "arrivalTime": "12:16:00",
+        "routeId": "32446"
+      },
+      {
+        "trainNumber": "566",
+        "departureTime": "12:59:00",
+        "arrivalTime": "13:16:00",
+        "routeId": "32448"
+      },
+      {
+        "trainNumber": "568",
+        "departureTime": "13:59:00",
+        "arrivalTime": "14:16:00",
+        "routeId": "32449"
+      },
+      {
+        "trainNumber": "572",
+        "departureTime": "14:59:00",
+        "arrivalTime": "15:16:00",
+        "routeId": "32451"
+      },
+      {
+        "trainNumber": "574",
+        "departureTime": "15:29:00",
+        "arrivalTime": "15:49:00",
+        "routeId": "34189"
+      },
+      {
+        "trainNumber": "576",
+        "departureTime": "15:59:00",
+        "arrivalTime": "16:16:00",
+        "routeId": "32453"
+      },
+      {
+        "trainNumber": "578",
+        "departureTime": "16:29:00",
+        "arrivalTime": "16:49:00",
+        "routeId": "34191"
+      },
+      {
+        "trainNumber": "580",
+        "departureTime": "16:59:00",
+        "arrivalTime": "17:16:00",
+        "routeId": "32455"
+      },
+      {
+        "trainNumber": "582",
+        "departureTime": "17:29:00",
+        "arrivalTime": "17:49:00",
+        "routeId": "34193"
+      },
+      {
+        "trainNumber": "584",
+        "departureTime": "17:59:00",
+        "arrivalTime": "18:16:00",
+        "routeId": "32457"
+      },
+      {
+        "trainNumber": "586",
+        "departureTime": "18:29:00",
+        "arrivalTime": "18:49:00",
+        "routeId": "34195"
+      },
+      {
+        "trainNumber": "588",
+        "departureTime": "18:59:00",
+        "arrivalTime": "19:16:00",
+        "routeId": "32459"
+      },
+      {
+        "trainNumber": "592",
+        "departureTime": "19:59:00",
+        "arrivalTime": "20:16:00",
+        "routeId": "32461"
+      },
+      {
+        "trainNumber": "594",
+        "departureTime": "20:59:00",
+        "arrivalTime": "21:16:00",
+        "routeId": "32463"
+      }
+    ],
+    "680_400": [
+      {
+        "trainNumber": "542",
+        "departureTime": "05:59:00",
+        "arrivalTime": "06:24:00",
+        "routeId": "32433"
+      },
+      {
+        "trainNumber": "544",
+        "departureTime": "06:29:00",
+        "arrivalTime": "06:57:00",
+        "routeId": "41679"
+      },
+      {
+        "trainNumber": "546",
+        "departureTime": "06:59:00",
+        "arrivalTime": "07:24:00",
+        "routeId": "32435"
+      },
+      {
+        "trainNumber": "548",
+        "departureTime": "07:29:00",
+        "arrivalTime": "07:57:00",
+        "routeId": "34185"
+      },
+      {
+        "trainNumber": "550",
+        "departureTime": "07:59:00",
+        "arrivalTime": "08:24:00",
+        "routeId": "32437"
+      },
+      {
+        "trainNumber": "552",
+        "departureTime": "08:29:00",
+        "arrivalTime": "08:57:00",
+        "routeId": "34187"
+      },
+      {
+        "trainNumber": "554",
+        "departureTime": "08:59:00",
+        "arrivalTime": "09:24:00",
+        "routeId": "32439"
+      },
+      {
+        "trainNumber": "558",
+        "departureTime": "09:59:00",
+        "arrivalTime": "10:24:00",
+        "routeId": "32441"
+      },
+      {
+        "trainNumber": "562",
+        "departureTime": "10:59:00",
+        "arrivalTime": "11:24:00",
+        "routeId": "32444"
+      },
+      {
+        "trainNumber": "564",
+        "departureTime": "11:59:00",
+        "arrivalTime": "12:24:00",
+        "routeId": "32446"
+      },
+      {
+        "trainNumber": "566",
+        "departureTime": "12:59:00",
+        "arrivalTime": "13:24:00",
+        "routeId": "32448"
+      },
+      {
+        "trainNumber": "568",
+        "departureTime": "13:59:00",
+        "arrivalTime": "14:24:00",
+        "routeId": "32449"
+      },
+      {
+        "trainNumber": "572",
+        "departureTime": "14:59:00",
+        "arrivalTime": "15:24:00",
+        "routeId": "32451"
+      },
+      {
+        "trainNumber": "574",
+        "departureTime": "15:29:00",
+        "arrivalTime": "15:57:00",
+        "routeId": "34189"
+      },
+      {
+        "trainNumber": "576",
+        "departureTime": "15:59:00",
+        "arrivalTime": "16:24:00",
+        "routeId": "32453"
+      },
+      {
+        "trainNumber": "578",
+        "departureTime": "16:29:00",
+        "arrivalTime": "16:57:00",
+        "routeId": "34191"
+      },
+      {
+        "trainNumber": "580",
+        "departureTime": "16:59:00",
+        "arrivalTime": "17:24:00",
+        "routeId": "32455"
+      },
+      {
+        "trainNumber": "582",
+        "departureTime": "17:29:00",
+        "arrivalTime": "17:57:00",
+        "routeId": "34193"
+      },
+      {
+        "trainNumber": "584",
+        "departureTime": "17:59:00",
+        "arrivalTime": "18:24:00",
+        "routeId": "32457"
+      },
+      {
+        "trainNumber": "586",
+        "departureTime": "18:29:00",
+        "arrivalTime": "18:57:00",
+        "routeId": "34195"
+      },
+      {
+        "trainNumber": "588",
+        "departureTime": "18:59:00",
+        "arrivalTime": "19:24:00",
+        "routeId": "32459"
+      },
+      {
+        "trainNumber": "592",
+        "departureTime": "19:59:00",
+        "arrivalTime": "20:24:00",
+        "routeId": "32461"
+      },
+      {
+        "trainNumber": "594",
+        "departureTime": "20:59:00",
+        "arrivalTime": "21:24:00",
+        "routeId": "32463"
+      }
+    ],
+    "400_680": [
+      {
+        "trainNumber": "543",
+        "departureTime": "06:06:00",
+        "arrivalTime": "06:35:00",
+        "routeId": "32434"
+      },
+      {
+        "trainNumber": "545",
+        "departureTime": "06:36:00",
+        "arrivalTime": "07:05:00",
+        "routeId": "41680"
+      },
+      {
+        "trainNumber": "547",
+        "departureTime": "07:06:00",
+        "arrivalTime": "07:35:00",
+        "routeId": "32436"
+      },
+      {
+        "trainNumber": "549",
+        "departureTime": "07:36:00",
+        "arrivalTime": "08:05:00",
+        "routeId": "34186"
+      },
+      {
+        "trainNumber": "551",
+        "departureTime": "08:06:00",
+        "arrivalTime": "08:35:00",
+        "routeId": "32438"
+      },
+      {
+        "trainNumber": "553",
+        "departureTime": "08:36:00",
+        "arrivalTime": "09:05:00",
+        "routeId": "34188"
+      },
+      {
+        "trainNumber": "555",
+        "departureTime": "09:06:00",
+        "arrivalTime": "09:35:00",
+        "routeId": "32440"
+      },
+      {
+        "trainNumber": "559",
+        "departureTime": "10:06:00",
+        "arrivalTime": "10:35:00",
+        "routeId": "32442"
+      },
+      {
+        "trainNumber": "561",
+        "departureTime": "11:06:00",
+        "arrivalTime": "11:35:00",
+        "routeId": "32443"
+      },
+      {
+        "trainNumber": "563",
+        "departureTime": "12:06:00",
+        "arrivalTime": "12:35:00",
+        "routeId": "32445"
+      },
+      {
+        "trainNumber": "565",
+        "departureTime": "13:06:00",
+        "arrivalTime": "13:35:00",
+        "routeId": "32447"
+      },
+      {
+        "trainNumber": "569",
+        "departureTime": "14:06:00",
+        "arrivalTime": "14:35:00",
+        "routeId": "32450"
+      },
+      {
+        "trainNumber": "573",
+        "departureTime": "15:06:00",
+        "arrivalTime": "15:35:00",
+        "routeId": "32452"
+      },
+      {
+        "trainNumber": "575",
+        "departureTime": "15:36:00",
+        "arrivalTime": "16:05:00",
+        "routeId": "34190"
+      },
+      {
+        "trainNumber": "577",
+        "departureTime": "16:06:00",
+        "arrivalTime": "16:35:00",
+        "routeId": "32454"
+      },
+      {
+        "trainNumber": "579",
+        "departureTime": "16:36:00",
+        "arrivalTime": "17:05:00",
+        "routeId": "34192"
+      },
+      {
+        "trainNumber": "581",
+        "departureTime": "17:06:00",
+        "arrivalTime": "17:35:00",
+        "routeId": "32456"
+      },
+      {
+        "trainNumber": "583",
+        "departureTime": "17:36:00",
+        "arrivalTime": "18:05:00",
+        "routeId": "34194"
+      },
+      {
+        "trainNumber": "585",
+        "departureTime": "18:06:00",
+        "arrivalTime": "18:35:00",
+        "routeId": "32458"
+      },
+      {
+        "trainNumber": "587",
+        "departureTime": "18:36:00",
+        "arrivalTime": "19:05:00",
+        "routeId": "34196"
+      },
+      {
+        "trainNumber": "589",
+        "departureTime": "19:06:00",
+        "arrivalTime": "19:35:00",
+        "routeId": "32460"
+      },
+      {
+        "trainNumber": "593",
+        "departureTime": "20:06:00",
+        "arrivalTime": "20:35:00",
+        "routeId": "32462"
+      }
+    ],
+    "300_680": [
+      {
+        "trainNumber": "543",
+        "departureTime": "06:13:00",
+        "arrivalTime": "06:35:00",
+        "routeId": "32434"
+      },
+      {
+        "trainNumber": "545",
+        "departureTime": "06:43:00",
+        "arrivalTime": "07:05:00",
+        "routeId": "41680"
+      },
+      {
+        "trainNumber": "547",
+        "departureTime": "07:13:00",
+        "arrivalTime": "07:35:00",
+        "routeId": "32436"
+      },
+      {
+        "trainNumber": "549",
+        "departureTime": "07:43:00",
+        "arrivalTime": "08:05:00",
+        "routeId": "34186"
+      },
+      {
+        "trainNumber": "551",
+        "departureTime": "08:13:00",
+        "arrivalTime": "08:35:00",
+        "routeId": "32438"
+      },
+      {
+        "trainNumber": "553",
+        "departureTime": "08:43:00",
+        "arrivalTime": "09:05:00",
+        "routeId": "34188"
+      },
+      {
+        "trainNumber": "555",
+        "departureTime": "09:13:00",
+        "arrivalTime": "09:35:00",
+        "routeId": "32440"
+      },
+      {
+        "trainNumber": "559",
+        "departureTime": "10:13:00",
+        "arrivalTime": "10:35:00",
+        "routeId": "32442"
+      },
+      {
+        "trainNumber": "561",
+        "departureTime": "11:13:00",
+        "arrivalTime": "11:35:00",
+        "routeId": "32443"
+      },
+      {
+        "trainNumber": "563",
+        "departureTime": "12:13:00",
+        "arrivalTime": "12:35:00",
+        "routeId": "32445"
+      },
+      {
+        "trainNumber": "565",
+        "departureTime": "13:13:00",
+        "arrivalTime": "13:35:00",
+        "routeId": "32447"
+      },
+      {
+        "trainNumber": "569",
+        "departureTime": "14:13:00",
+        "arrivalTime": "14:35:00",
+        "routeId": "32450"
+      },
+      {
+        "trainNumber": "573",
+        "departureTime": "15:13:00",
+        "arrivalTime": "15:35:00",
+        "routeId": "32452"
+      },
+      {
+        "trainNumber": "575",
+        "departureTime": "15:43:00",
+        "arrivalTime": "16:05:00",
+        "routeId": "34190"
+      },
+      {
+        "trainNumber": "577",
+        "departureTime": "16:13:00",
+        "arrivalTime": "16:35:00",
+        "routeId": "32454"
+      },
+      {
+        "trainNumber": "579",
+        "departureTime": "16:43:00",
+        "arrivalTime": "17:05:00",
+        "routeId": "34192"
+      },
+      {
+        "trainNumber": "581",
+        "departureTime": "17:13:00",
+        "arrivalTime": "17:35:00",
+        "routeId": "32456"
+      },
+      {
+        "trainNumber": "583",
+        "departureTime": "17:43:00",
+        "arrivalTime": "18:05:00",
+        "routeId": "34194"
+      },
+      {
+        "trainNumber": "585",
+        "departureTime": "18:13:00",
+        "arrivalTime": "18:35:00",
+        "routeId": "32458"
+      },
+      {
+        "trainNumber": "587",
+        "departureTime": "18:43:00",
+        "arrivalTime": "19:05:00",
+        "routeId": "34196"
+      },
+      {
+        "trainNumber": "589",
+        "departureTime": "19:13:00",
+        "arrivalTime": "19:35:00",
+        "routeId": "32460"
+      },
+      {
+        "trainNumber": "593",
+        "departureTime": "20:13:00",
+        "arrivalTime": "20:35:00",
+        "routeId": "32462"
+      }
+    ],
+    "680_8600": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:29:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "06:59:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:29:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "07:59:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:29:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "08:59:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:29:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "09:59:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:29:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "10:59:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:29:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "11:59:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:29:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "12:59:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:29:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "13:59:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:29:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "14:59:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:29:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "15:59:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:29:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "16:59:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:29:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "17:59:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:29:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "18:59:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:29:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "19:59:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:29:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "20:59:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:29:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:23:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "22:52:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:23:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "23:52:00",
+        "routeId": "30351"
+      }
+    ],
+    "680_4900": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:40:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:10:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:40:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:10:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:40:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:10:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:40:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:10:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:40:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:10:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:40:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:10:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:40:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:10:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:40:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:10:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:40:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:10:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:40:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:10:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:40:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:10:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:40:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:10:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:40:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:10:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:40:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:10:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:40:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:10:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:40:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "22:02:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:33:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "23:02:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:33:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "24:02:00",
+        "routeId": "30351"
+      }
+    ],
+    "680_4600": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:45:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:15:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:45:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:15:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:45:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:15:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:45:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:15:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:45:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:15:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:45:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:15:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:45:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:15:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:45:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:15:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:45:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:15:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:45:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:15:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:45:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:15:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:45:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:15:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:45:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:15:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:45:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:15:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:45:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:15:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:45:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "22:07:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:38:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "23:06:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:38:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "24:06:00",
+        "routeId": "30351"
+      }
+    ],
+    "680_3700": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:50:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:20:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:50:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:20:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:50:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:20:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:50:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:20:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:50:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:20:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:50:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:20:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:50:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:20:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:50:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:20:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:50:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:20:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:50:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:20:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:50:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:20:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:50:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:20:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:50:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:20:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:50:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:20:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:50:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:20:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:50:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "22:11:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:43:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "23:10:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:43:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "24:10:00",
+        "routeId": "30351"
+      }
+    ],
+    "680_3600": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:55:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:25:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:55:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:25:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:55:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:25:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:55:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:25:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:55:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:25:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:55:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:25:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:55:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:25:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:55:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:25:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:55:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:25:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:55:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:25:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:55:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:25:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:55:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:25:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:55:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:25:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:55:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:25:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:55:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:25:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:55:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "22:16:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:48:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "23:15:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:48:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "24:15:00",
+        "routeId": "30351"
+      }
+    ],
+    "680_3500": [
+      {
+        "trainNumber": "714",
+        "departureTime": "06:09:00",
+        "arrivalTime": "07:03:00",
+        "routeId": "33542"
+      },
+      {
+        "trainNumber": "716",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:33:00",
+        "routeId": "30276"
+      },
+      {
+        "trainNumber": "718",
+        "departureTime": "07:09:00",
+        "arrivalTime": "08:03:00",
+        "routeId": "30278"
+      },
+      {
+        "trainNumber": "720",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:33:00",
+        "routeId": "30281"
+      },
+      {
+        "trainNumber": "722",
+        "departureTime": "08:09:00",
+        "arrivalTime": "09:03:00",
+        "routeId": "30283"
+      },
+      {
+        "trainNumber": "724",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:33:00",
+        "routeId": "30285"
+      },
+      {
+        "trainNumber": "726",
+        "departureTime": "09:09:00",
+        "arrivalTime": "10:03:00",
+        "routeId": "30287"
+      },
+      {
+        "trainNumber": "728",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:33:00",
+        "routeId": "30289"
+      },
+      {
+        "trainNumber": "730",
+        "departureTime": "10:09:00",
+        "arrivalTime": "11:03:00",
+        "routeId": "30292"
+      },
+      {
+        "trainNumber": "732",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:33:00",
+        "routeId": "30294"
+      },
+      {
+        "trainNumber": "734",
+        "departureTime": "11:09:00",
+        "arrivalTime": "12:03:00",
+        "routeId": "30296"
+      },
+      {
+        "trainNumber": "736",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:33:00",
+        "routeId": "30298"
+      },
+      {
+        "trainNumber": "738",
+        "departureTime": "12:09:00",
+        "arrivalTime": "13:03:00",
+        "routeId": "30300"
+      },
+      {
+        "trainNumber": "740",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:33:00",
+        "routeId": "30303"
+      },
+      {
+        "trainNumber": "742",
+        "departureTime": "13:09:00",
+        "arrivalTime": "14:03:00",
+        "routeId": "30305"
+      },
+      {
+        "trainNumber": "744",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:33:00",
+        "routeId": "30307"
+      },
+      {
+        "trainNumber": "746",
+        "departureTime": "14:09:00",
+        "arrivalTime": "15:03:00",
+        "routeId": "30309"
+      },
+      {
+        "trainNumber": "748",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:33:00",
+        "routeId": "30311"
+      },
+      {
+        "trainNumber": "750",
+        "departureTime": "15:09:00",
+        "arrivalTime": "16:03:00",
+        "routeId": "30314"
+      },
+      {
+        "trainNumber": "752",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:33:00",
+        "routeId": "30316"
+      },
+      {
+        "trainNumber": "754",
+        "departureTime": "16:09:00",
+        "arrivalTime": "17:03:00",
+        "routeId": "30318"
+      },
+      {
+        "trainNumber": "756",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:33:00",
+        "routeId": "30320"
+      },
+      {
+        "trainNumber": "758",
+        "departureTime": "17:09:00",
+        "arrivalTime": "18:03:00",
+        "routeId": "30322"
+      },
+      {
+        "trainNumber": "760",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:33:00",
+        "routeId": "30325"
+      },
+      {
+        "trainNumber": "762",
+        "departureTime": "18:09:00",
+        "arrivalTime": "19:03:00",
+        "routeId": "30327"
+      },
+      {
+        "trainNumber": "764",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:33:00",
+        "routeId": "30329"
+      },
+      {
+        "trainNumber": "766",
+        "departureTime": "19:09:00",
+        "arrivalTime": "20:03:00",
+        "routeId": "30331"
+      },
+      {
+        "trainNumber": "768",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:33:00",
+        "routeId": "30333"
+      },
+      {
+        "trainNumber": "770",
+        "departureTime": "20:09:00",
+        "arrivalTime": "21:03:00",
+        "routeId": "30336"
+      },
+      {
+        "trainNumber": "772",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:33:00",
+        "routeId": "30338"
+      },
+      {
+        "trainNumber": "774",
+        "departureTime": "21:09:00",
+        "arrivalTime": "22:03:00",
+        "routeId": "30340"
+      },
+      {
+        "trainNumber": "776",
+        "departureTime": "21:32:00",
+        "arrivalTime": "22:23:00",
+        "routeId": "30342"
+      },
+      {
+        "trainNumber": "778",
+        "departureTime": "22:02:00",
+        "arrivalTime": "22:55:00",
+        "routeId": "30344"
+      },
+      {
+        "trainNumber": "780",
+        "departureTime": "22:32:00",
+        "arrivalTime": "23:23:00",
+        "routeId": "30347"
+      },
+      {
+        "trainNumber": "782",
+        "departureTime": "23:02:00",
+        "arrivalTime": "23:55:00",
+        "routeId": "30349"
+      },
+      {
+        "trainNumber": "784",
+        "departureTime": "23:32:00",
+        "arrivalTime": "24:22:00",
+        "routeId": "30351"
+      }
+    ],
+    "3500_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:24:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "05:54:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:24:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "06:54:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:24:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "07:54:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:24:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "08:54:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:24:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "09:54:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:24:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "10:54:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:24:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "11:54:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:24:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "12:54:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:24:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "13:54:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:24:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "14:54:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:24:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "15:54:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:24:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "16:54:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:24:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "17:54:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:24:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "18:54:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:24:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "19:54:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:24:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "20:54:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "21:29:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "21:59:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "22:29:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:03:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "23:29:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ],
+    "3600_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:30:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "06:00:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:30:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "07:00:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:30:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "08:00:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:30:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "09:00:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:30:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "10:00:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:30:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "11:00:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:30:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "12:00:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:30:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "13:00:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:30:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "14:00:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:30:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "15:00:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:30:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "16:00:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:30:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "17:00:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:30:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "18:00:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:30:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "19:00:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:30:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "20:00:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:30:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "21:00:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "21:36:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "22:06:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "22:36:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:09:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "23:36:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ],
+    "3700_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:35:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "06:05:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:35:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "07:05:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:35:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "08:05:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:35:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "09:05:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:35:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "10:05:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:35:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "11:05:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:35:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "12:05:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:35:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "13:05:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:35:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "14:05:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:35:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "15:05:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:35:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "16:05:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:35:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "17:05:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:35:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "18:05:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:35:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "19:05:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:35:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "20:05:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:35:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "21:05:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "21:41:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "22:12:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "22:41:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:14:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "23:41:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ],
+    "4600_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:39:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "06:09:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:39:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "07:09:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:39:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "08:09:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:39:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "09:09:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:39:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "10:09:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:39:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "11:09:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:39:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "12:09:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:39:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "13:09:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:39:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "14:09:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:39:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "15:09:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:39:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "16:09:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:39:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "17:09:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:39:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "18:09:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:39:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "19:09:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:39:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "20:09:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:39:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "21:09:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "21:46:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "22:18:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "22:46:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:18:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "23:46:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ],
+    "4900_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:45:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "06:15:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:45:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "07:15:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:45:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "08:15:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:45:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "09:15:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:45:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "10:15:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:45:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "11:15:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:45:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "12:15:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:45:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "13:15:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:45:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "14:15:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:45:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "15:15:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:45:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "16:15:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:45:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "17:15:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:45:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "18:15:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:45:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "19:15:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:45:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "20:15:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:45:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "21:15:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "21:52:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "22:23:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "22:52:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:23:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "23:52:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ],
+    "8600_680": [
+      {
+        "trainNumber": "713",
+        "departureTime": "05:56:00",
+        "arrivalTime": "06:22:00",
+        "routeId": "33541"
+      },
+      {
+        "trainNumber": "715",
+        "departureTime": "06:26:00",
+        "arrivalTime": "06:52:00",
+        "routeId": "30275"
+      },
+      {
+        "trainNumber": "717",
+        "departureTime": "06:56:00",
+        "arrivalTime": "07:22:00",
+        "routeId": "30277"
+      },
+      {
+        "trainNumber": "719",
+        "departureTime": "07:26:00",
+        "arrivalTime": "07:52:00",
+        "routeId": "30279"
+      },
+      {
+        "trainNumber": "721",
+        "departureTime": "07:56:00",
+        "arrivalTime": "08:22:00",
+        "routeId": "30282"
+      },
+      {
+        "trainNumber": "723",
+        "departureTime": "08:26:00",
+        "arrivalTime": "08:52:00",
+        "routeId": "30284"
+      },
+      {
+        "trainNumber": "725",
+        "departureTime": "08:56:00",
+        "arrivalTime": "09:22:00",
+        "routeId": "30286"
+      },
+      {
+        "trainNumber": "727",
+        "departureTime": "09:26:00",
+        "arrivalTime": "09:52:00",
+        "routeId": "30288"
+      },
+      {
+        "trainNumber": "729",
+        "departureTime": "09:56:00",
+        "arrivalTime": "10:22:00",
+        "routeId": "30290"
+      },
+      {
+        "trainNumber": "731",
+        "departureTime": "10:26:00",
+        "arrivalTime": "10:52:00",
+        "routeId": "30293"
+      },
+      {
+        "trainNumber": "733",
+        "departureTime": "10:56:00",
+        "arrivalTime": "11:22:00",
+        "routeId": "30295"
+      },
+      {
+        "trainNumber": "735",
+        "departureTime": "11:26:00",
+        "arrivalTime": "11:52:00",
+        "routeId": "30297"
+      },
+      {
+        "trainNumber": "737",
+        "departureTime": "11:56:00",
+        "arrivalTime": "12:22:00",
+        "routeId": "30299"
+      },
+      {
+        "trainNumber": "739",
+        "departureTime": "12:26:00",
+        "arrivalTime": "12:52:00",
+        "routeId": "30301"
+      },
+      {
+        "trainNumber": "741",
+        "departureTime": "12:56:00",
+        "arrivalTime": "13:22:00",
+        "routeId": "30304"
+      },
+      {
+        "trainNumber": "743",
+        "departureTime": "13:26:00",
+        "arrivalTime": "13:52:00",
+        "routeId": "30306"
+      },
+      {
+        "trainNumber": "745",
+        "departureTime": "13:56:00",
+        "arrivalTime": "14:22:00",
+        "routeId": "30308"
+      },
+      {
+        "trainNumber": "747",
+        "departureTime": "14:26:00",
+        "arrivalTime": "14:52:00",
+        "routeId": "30310"
+      },
+      {
+        "trainNumber": "749",
+        "departureTime": "14:56:00",
+        "arrivalTime": "15:22:00",
+        "routeId": "30312"
+      },
+      {
+        "trainNumber": "751",
+        "departureTime": "15:26:00",
+        "arrivalTime": "15:52:00",
+        "routeId": "30315"
+      },
+      {
+        "trainNumber": "753",
+        "departureTime": "15:56:00",
+        "arrivalTime": "16:22:00",
+        "routeId": "30317"
+      },
+      {
+        "trainNumber": "755",
+        "departureTime": "16:26:00",
+        "arrivalTime": "16:52:00",
+        "routeId": "30319"
+      },
+      {
+        "trainNumber": "757",
+        "departureTime": "16:56:00",
+        "arrivalTime": "17:22:00",
+        "routeId": "30321"
+      },
+      {
+        "trainNumber": "759",
+        "departureTime": "17:26:00",
+        "arrivalTime": "17:52:00",
+        "routeId": "30323"
+      },
+      {
+        "trainNumber": "761",
+        "departureTime": "17:56:00",
+        "arrivalTime": "18:22:00",
+        "routeId": "30326"
+      },
+      {
+        "trainNumber": "763",
+        "departureTime": "18:26:00",
+        "arrivalTime": "18:52:00",
+        "routeId": "30328"
+      },
+      {
+        "trainNumber": "765",
+        "departureTime": "18:56:00",
+        "arrivalTime": "19:22:00",
+        "routeId": "30330"
+      },
+      {
+        "trainNumber": "767",
+        "departureTime": "19:26:00",
+        "arrivalTime": "19:52:00",
+        "routeId": "30332"
+      },
+      {
+        "trainNumber": "769",
+        "departureTime": "19:56:00",
+        "arrivalTime": "20:22:00",
+        "routeId": "30334"
+      },
+      {
+        "trainNumber": "771",
+        "departureTime": "20:26:00",
+        "arrivalTime": "20:52:00",
+        "routeId": "30337"
+      },
+      {
+        "trainNumber": "773",
+        "departureTime": "20:56:00",
+        "arrivalTime": "21:22:00",
+        "routeId": "30339"
+      },
+      {
+        "trainNumber": "775",
+        "departureTime": "21:26:00",
+        "arrivalTime": "21:52:00",
+        "routeId": "30341"
+      },
+      {
+        "trainNumber": "777",
+        "departureTime": "22:03:00",
+        "arrivalTime": "22:29:00",
+        "routeId": "30343"
+      },
+      {
+        "trainNumber": "779",
+        "departureTime": "22:33:00",
+        "arrivalTime": "22:59:00",
+        "routeId": "30345"
+      },
+      {
+        "trainNumber": "781",
+        "departureTime": "23:03:00",
+        "arrivalTime": "23:29:00",
+        "routeId": "30348"
+      },
+      {
+        "trainNumber": "783",
+        "departureTime": "23:33:00",
+        "arrivalTime": "23:59:00",
+        "routeId": "30350"
+      },
+      {
+        "trainNumber": "785",
+        "departureTime": "24:03:00",
+        "arrivalTime": "24:29:00",
+        "routeId": "38462"
+      }
+    ]
+  },
+  "unmatchedStops": []
+}

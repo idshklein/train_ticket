@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>יצירת שובר רכבת</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="card">
+      <h1>יצירת שובר רכבת</h1>
+
+      <div class="direction-group" id="directionGroup">
+        <button type="button" class="direction-btn active" data-direction="from-jerusalem">מירושלים</button>
+        <button type="button" class="direction-btn" data-direction="to-jerusalem">אל ירושלים</button>
+      </div>
+
+      <form id="voucherForm" class="voucher-form">
+        <label>
+          <span id="stationLabel">תחנת יעד</span>
+          <select id="otherStation" required>
+            <option value="">טוען תחנות...</option>
+          </select>
+        </label>
+
+        <div class="grid two-cols">
+          <label>
+            <span>תאריך</span>
+            <input type="date" id="tripDate" required />
+          </label>
+
+          <label>
+            <span>שעה</span>
+            <select id="tripTime" required>
+              <option value="">בחר שעה</option>
+            </select>
+          </label>
+        </div>
+
+        <input type="hidden" id="trainNumber" value="" />
+        <input type="hidden" id="scheduleType" value="1" />
+        <input type="hidden" id="trainType" value="empty" />
+
+        <p id="statusText" class="microcopy"></p>
+
+        <button type="submit" class="primary-btn">פתח באתר הרכבת</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
