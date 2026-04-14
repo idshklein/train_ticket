@@ -1,9 +1,11 @@
 [build]
   publish = "."
 
-[[edge_functions]]
-  function = "rail-api-proxy"
-  path = "/rail-api/*"
+[[redirects]]
+  from = "/rail-api/*"
+  to = "/.netlify/functions/rail-proxy/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
