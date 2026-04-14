@@ -1,6 +1,6 @@
 const JERUSALEM_STATION_ID = "680";
 const DEFAULT_OTHER_STATION = "2800";
-const API_BASE = "/rail-api";
+const API_BASE = "https://rail-proxy.disgrk1-262.workers.dev";
 const bookingHelpers = window.BookingHelpers || {};
 const buildReservationUrl =
   bookingHelpers.buildReservationUrl ||
