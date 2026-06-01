@@ -9,7 +9,7 @@ function buildUpstreamUrl(pathname = "") {
   return tail ? `${UPSTREAM}/${tail}` : UPSTREAM;
 }
 
-function buildUpstreamHeaders(cookieHeader) {
+function buildUpstreamHeaders(cookieHeader, apiKey) {
   const headers = new Headers({
     "Content-Type": "application/json",
     "Accept": "application/json, text/plain, */*",
@@ -20,7 +20,7 @@ function buildUpstreamHeaders(cookieHeader) {
     "Sec-Fetch-Site": "same-site",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Dest": "empty",
-    "Ocp-Apim-Subscription-Key": "5e64d66cf03f4547bcac5de2de06b566",
+    "Ocp-Apim-Subscription-Key": apiKey,
   });
 
   if (cookieHeader) {
@@ -41,7 +41,7 @@ function corsHeaders(origin) {
 }
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
     const url = new URL(request.url);
 
@@ -66,7 +66,7 @@ export default {
 
     const response = await fetch(upstreamUrl, {
       method: request.method,
-      headers: buildUpstreamHeaders(request.headers.get("cookie")),
+      headers: buildUpstreamHeaders(request.headers.get("cookie"), env.OCP_APIM_SUBSCRIPTION_KEY),
       body,
       redirect: "follow",
     });

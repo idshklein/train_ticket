@@ -22,7 +22,7 @@ function buildUpstreamHeaders(cookieHeader) {
     "Sec-Fetch-Site": "same-site",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Dest": "empty",
-    "Ocp-Apim-Subscription-Key": "5e64d66cf03f4547bcac5de2de06b566",
+    "Ocp-Apim-Subscription-Key": Deno.env.get("OCP_APIM_SUBSCRIPTION_KEY"),
   });
 
   if (cookieHeader) {
